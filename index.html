@@ -112,9 +112,10 @@
             navigator.clipboard.writeText(inputEl.value)
         }
 
-        const passwordLengthEl = document.querySelector('#password-length')
+        const passwordLengthEl = document.querySelector("#password-length")
         passwordLengthEl.addEventListener("input", function() {
             passwordLength = passwordLengthEl.value
+            document.querySelector("#password-length-text").innerText = passwordLength
             generatePassword()
         })
         upperCaseCheckEl.addEventListener("click", generatePassword)
