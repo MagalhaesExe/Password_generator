@@ -264,8 +264,11 @@ main {
 
 @media only screen and (max-width: 480px) {
     .theme-toggle {
-        top: -10px;
-        right: 10px;
+        top: -3px;
+        right: -18px;
+    }
+    .theme-toggle img {
+        width: 24px;
     }
     .password {
         padding: 1rem;
