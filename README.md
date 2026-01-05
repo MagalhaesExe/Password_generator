@@ -30,6 +30,7 @@ O código foi organizado seguindo as melhores práticas de separação de respon
 - `style.css`: Estilos globais e temas.
 - `reset.css`: Reset para garantir consistência entre navegadores.
 - `script.js`: Toda a lógica e interatividade do sistema.
+- `LICENSE`: Arquivo da licença MIT
 
 ---
 
@@ -37,7 +38,7 @@ O código foi organizado seguindo as melhores práticas de separação de respon
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/MagalhaesExe/password_generator.git
+   git clone https://github.com/MagalhaesExe/Password_generator.git
    ```
 2. Entre na pasta do projeto:
    ```bash
