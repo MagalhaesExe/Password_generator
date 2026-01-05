@@ -1,8 +1,8 @@
-# 🔐 Password Generator
+# Password Generator
 
 Um gerador de senhas seguro, moderno e responsivo, desenvolvido com HTML, CSS e JavaScript puro. O projeto conta com indicadores de força da senha, personalização de caracteres e suporte a modo escuro.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 * **Geração Personalizada:** Escolha o comprimento da senha e inclua letras maiúsculas, números e símbolos.
 * **Indicador de Segurança:** Uma barra visual que indica se a senha gerada é fraca, média ou forte.
@@ -13,7 +13,7 @@ Um gerador de senhas seguro, moderno e responsivo, desenvolvido com HTML, CSS e 
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **HTML5**: Estrutura semântica.
 * **CSS3**: Estilização com Variáveis CSS (Custom Properties), Flexbox e Media Queries.
@@ -22,7 +22,7 @@ Um gerador de senhas seguro, moderno e responsivo, desenvolvido com HTML, CSS e 
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 O código foi organizado seguindo as melhores práticas de separação de responsabilidades:
 
@@ -34,7 +34,7 @@ O código foi organizado seguindo as melhores práticas de separação de respon
 
 ---
 
-## ⚙️ Como executar o projeto
+## Como executar o projeto
 
 1. Clone o repositório:
    ```bash
@@ -48,5 +48,5 @@ O código foi organizado seguindo as melhores práticas de separação de respon
 
 ---
 
-## 📄 Licença
+## Licença
 Este projeto está sob a licença [MIT](./LICENSE). Consulte o arquivo [LICENSE](./LICENSE) para mais detalhes.
