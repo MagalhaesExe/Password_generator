@@ -44,3 +44,8 @@ O código foi organizado seguindo as melhores práticas de separação de respon
    cd password_generator
    ```
 3. Abra o arquivo `index.html` no seu navegador de preferência.
+
+---
+
+## 📄 Licença
+Este projeto está sob a licença [MIT](./LICENSE). Consulte o arquivo [LICENSE](./LICENSE) para mais detalhes.
