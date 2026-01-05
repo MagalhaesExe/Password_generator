@@ -3,6 +3,7 @@ const upperCaseCheckEl = document.querySelector("#uppercase-check")
 const numberCheckEl = document.querySelector("#number-check")
 const symbolCheckEl = document.querySelector("#symbol-check")
 const securityIndicatorBarEl = document.querySelector("#security-indicator-bar")
+const themeToggleBtn = document.querySelector("#theme-toggle")
 
 let passwordLength = 16
 
@@ -95,6 +96,20 @@ passwordLengthEl.addEventListener("input", function() {
     passwordLength = passwordLengthEl.value
     document.querySelector("#password-length-text").innerText = passwordLength
     generatePassword()
+})
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark")
+}
+
+themeToggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark")
+            
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark")
+    } else {
+        localStorage.setItem("theme", "light")
+    }
 })
 
 upperCaseCheckEl.addEventListener("click", generatePassword)

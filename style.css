@@ -1,13 +1,60 @@
+:root {
+    --bg-color: #f8fafd;
+    --box-bg: #ffffff;
+    --text-primary: #252525;
+    --text-secondary: #828282;
+    --border-color: #f0f0f0;
+    --input-bg: #ffffff;
+}
+
+.dark {
+    --bg-color: #121212;
+    --box-bg: #1e1e1e;
+    --text-primary: #f0f0f0;
+    --text-secondary: #b0b0b0;
+    --border-color: #333333;
+    --input-bg: #1e1e1e;
+}
+.dark  #theme-toggle img,
+.dark .password .actions img {
+    filter: invert(1) brightness(2);
+}
+.dark .submit button {
+    background-color: #9b51e0;
+    transition: all 0.2s;
+}
+.dark .submit button:hover {
+    background-color: #bb6bd9;
+}
+
 body {
-    background-color: #f8fafd;
+    background-color: var(--bg-color);
     font-family: 'Inter', sans-serif;
-    color: #252525;
+    color: var(--text-primary);
     padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 main {
     max-width: 780px;
     margin: 0 auto;
+    position: relative;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    padding: 0.5rem;
+}
+
+.theme-toggle:hover {
+    opacity: 1;
 }
 
 .hero {
@@ -21,11 +68,11 @@ main {
 }
 .hero .subtitle {
     font-size: 1.125rem;
-    color: #828282;
+    color: var(--text-secondary);
 }
 
 .box {
-    background: #fff;
+    background: var(--box-bg);
     box-shadow: 0 1px 2px rgba(132, 148, 165, 0.1);
     border-radius: 8px;
     margin-bottom: 3rem;
@@ -40,6 +87,8 @@ main {
     flex: 1;
 }
 .password .text input {
+    background-color: var(--input-bg);
+    color: var(--text-primary);
     font-family: "Inconsolata", serif;
     font-size: 3rem;
     border: none;
@@ -214,6 +263,10 @@ main {
 }
 
 @media only screen and (max-width: 480px) {
+    .theme-toggle {
+        top: -10px;
+        right: 10px;
+    }
     .password {
         padding: 1rem;
     }
